@@ -4,6 +4,10 @@
 @import url(typography.css) layer(init);
 
 @layer init {
+  :root {
+    --primary: #1557ff;
+  }
+
   ul,
   menu {
     list-style: none;
@@ -38,7 +42,7 @@
   .hamburger__line {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 4.5px;
     width: 42px;
     background-color: black;
     right: 0;
