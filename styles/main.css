@@ -15,6 +15,10 @@
     text-decoration: none;
     color: inherit;
   }
+
+  .no-margin {
+    margin: 0;
+  }
 }
 
 @layer design {
@@ -22,10 +26,47 @@
     padding: 0 1rem;
   }
 
+  .hamburger {
+    position: relative;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+    width: 42px;
+    height: 28px;
+  }
+
+  .hamburger__line {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 42px;
+    background-color: black;
+    right: 0;
+  }
+
+  .hamburger__line:nth-child(1) {
+    top: 0;
+  }
+  .hamburger__line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hamburger__line:nth-child(3) {
+    bottom: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
   .navbar__logo {
     position: relative;
     z-index: 10;
   }
+
   .navbar__items {
     position: fixed;
     top: 0;
