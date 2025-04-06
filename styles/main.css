@@ -7,7 +7,6 @@
   :root {
     --primary: #1557ff;
   }
-
   ul,
   menu {
     list-style: none;
@@ -31,6 +30,7 @@
     border-radius: 0.1rem;
     font-weight: 500;
     transition: background-color 0.2s ease;
+    cursor: pointer;
   }
 }
 
