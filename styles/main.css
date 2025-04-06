@@ -1,0 +1,13 @@
+@layer reset, init, design;
+
+@import url(normalize.css) layer(reset);
+@import url(typography.css) layer(init);
+
+@layer init {
+  ul,
+  menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
