@@ -26,6 +26,7 @@
     padding: 0 1rem;
   }
 
+  /* hamburger */
   .hamburger {
     position: relative;
     z-index: 10;
@@ -34,7 +35,6 @@
     width: 42px;
     height: 28px;
   }
-
   .hamburger__line {
     display: block;
     position: absolute;
@@ -43,7 +43,6 @@
     background-color: black;
     right: 0;
   }
-
   .hamburger__line:nth-child(1) {
     top: 0;
   }
@@ -55,18 +54,17 @@
     bottom: 0;
   }
 
+  /* navbar */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
   }
-
   .navbar__logo {
     position: relative;
     z-index: 10;
   }
-
   .navbar__items {
     position: fixed;
     top: 0;
