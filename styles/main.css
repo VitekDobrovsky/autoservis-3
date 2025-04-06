@@ -38,6 +38,7 @@
     background-color: transparent;
     width: 42px;
     height: 28px;
+    cursor: pointer;
   }
   .hamburger__line {
     display: block;
@@ -101,5 +102,27 @@
   .navbar__item {
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  @media (min-width: 824px) {
+    .page {
+      padding: 0 2rem;
+    }
+    .hamburger {
+      display: none;
+    }
+    .navbar__items {
+      position: static;
+      display: flex;
+      gap: 2rem;
+      transform: translateY(0);
+    }
+    .navbar__item {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    .navbar__item:hover {
+      text-decoration: underline;
+    }
   }
 }
