@@ -23,6 +23,15 @@
   .no-margin {
     margin: 0;
   }
+
+  .button {
+    background-color: var(--primary, #1557ff);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
 }
 
 @layer design {
@@ -89,9 +98,11 @@
     left: 0;
     right: 0;
 
-    display: grid;
-    place-content: center;
-    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
     text-align: center;
     transition: transform 0.2s ease;
     transform: translateY(100%);
@@ -113,7 +124,7 @@
     }
     .navbar__items {
       position: static;
-      display: flex;
+      flex-direction: row;
       gap: 2rem;
       transform: translateY(0);
     }
@@ -121,7 +132,7 @@
       font-size: 1.25rem;
       font-weight: 400;
     }
-    .navbar__item:hover {
+    .navbar__item:not(.button):hover {
       text-decoration: underline;
     }
   }
