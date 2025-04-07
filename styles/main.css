@@ -6,6 +6,7 @@
 @layer init {
   :root {
     --primary: #1557ff;
+    --dark: #1f2023;
   }
   ul,
   menu {
@@ -29,8 +30,13 @@
     padding: 0.5em 1em;
     border-radius: 0.1rem;
     font-weight: 500;
-    transition: background-color 0.2s ease;
     cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease, color 0.5s ease;
+  }
+  .button:hover {
+    background-color: white;
+    color: var(--primary, #1557ff);
   }
 }
 
@@ -54,7 +60,8 @@
     position: absolute;
     height: 4.5px;
     width: 42px;
-    background-color: black;
+    background-color: var(--dark, #1f2023);
+    border-radius: 1px;
     right: 0;
     transition: transform 0.2s ease, top 0.2s ease, bottom 0.2s ease, width 0.2s ease;
   }
@@ -132,8 +139,11 @@
       font-size: 1.25rem;
       font-weight: 400;
     }
-    .navbar__item:not(.button):hover {
-      text-decoration: underline;
+
+    /* hover animations */
+    .button:hover {
+      background-color: white;
+      color: var(--primary, #1557ff);
     }
   }
 }
