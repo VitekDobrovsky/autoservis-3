@@ -23,6 +23,54 @@ html {
   font-weight: 900;
 }
 
+
+/* ICONS */
+.icon {
+  color: transparent;
+  background-color: var(--primary, /*-colors__primary-*/);
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
+}
+.icon--phone {
+  -webkit-mask: url("./../images/icons/phone.svg");
+  mask: url("./../images/icons/phone.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon--location {
+  -webkit-mask: url("./../images/icons/location.svg");
+  mask: url("./../images/icons/location.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.icon--envelope {
+  -webkit-mask: url("./../images/icons/envelope.svg");
+  mask: url("./../images/icons/envelope.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+
 @media (min-width: 824px) {
   .logotype {
     font-size: 2rem;
