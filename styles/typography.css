@@ -2,11 +2,25 @@
 
 html {
   font-family: "DM Sans", sans-serif;
+  color: var(--dark, #1f2023);
 }
 
 .logotype {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.heading {
+  margin: 0.25em 0;
+}
+
+.heading--uppercase {
+  text-transform: uppercase;
+}
+
+.heading--h1 {
+  font-size: 4rem;
+  font-weight: 900;
 }
 
 @media (min-width: 824px) {

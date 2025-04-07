@@ -122,6 +122,11 @@
     font-weight: 500;
   }
 
+  .page__intro-contact {
+    display: flex;
+    gap: 1rem;
+  }
+
   @media (min-width: 824px) {
     .page {
       padding: 0 2rem;
