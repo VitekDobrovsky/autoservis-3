@@ -5,13 +5,17 @@ html {
   color: var(--dark, #1f2023);
 }
 
+.text-large {
+  font-size: 18px;
+}
+
 .logotype {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .heading {
-  margin: 0.25em 0;
+  margin: 0.1em 0;
 }
 
 .heading--uppercase {
@@ -23,19 +27,18 @@ html {
   font-weight: 900;
 }
 
-
 /* ICONS */
 .icon {
   color: transparent;
-  background-color: var(--primary, /*-colors__primary-*/);
+  background-color: var(--primary, #1557ff);
   display: inline-block;
   width: 1.1em;
   height: 1.1em;
   vertical-align: middle;
 }
 .icon--phone {
-  -webkit-mask: url("./../images/icons/phone.svg");
-  mask: url("./../images/icons/phone.svg");
+  -webkit-mask: url("/images/icons/phone.svg");
+  mask: url("/images/icons/phone.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
@@ -46,8 +49,8 @@ html {
   mask-size: contain;
 }
 .icon--location {
-  -webkit-mask: url("./../images/icons/location.svg");
-  mask: url("./../images/icons/location.svg");
+  -webkit-mask: url("/images/icons/locatoin.svg");
+  mask: url("/images/icons/location.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
@@ -58,8 +61,8 @@ html {
   mask-size: contain;
 }
 .icon--envelope {
-  -webkit-mask: url("./../images/icons/envelope.svg");
-  mask: url("./../images/icons/envelope.svg");
+  -webkit-mask: url("/images/icons/envelope.svg");
+  mask: url("/images/icons/envelope.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
@@ -69,7 +72,6 @@ html {
   -webkit-mask-size: contain;
   mask-size: contain;
 }
-
 
 @media (min-width: 824px) {
   .logotype {
