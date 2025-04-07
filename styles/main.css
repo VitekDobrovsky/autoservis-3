@@ -19,6 +19,10 @@
     text-decoration: none;
     color: inherit;
   }
+
+  address {
+    font-style: normal;
+  }
 }
 
 @layer design {
