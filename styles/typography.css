@@ -23,7 +23,7 @@ html {
 }
 
 .heading--h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
 }
 
@@ -75,6 +75,9 @@ html {
 
 @media (min-width: 824px) {
   .logotype {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+  .heading--h1 {
+    font-size: 4rem;
   }
 }

@@ -75,6 +75,9 @@
   }
 
   /* intro */
+  .page__intro-heading {
+    max-width: 11em;
+  }
   .page__intro-contact {
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +102,7 @@
       transform: translateY(0);
     }
     .page__navbar-item {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 400;
     }
   }
