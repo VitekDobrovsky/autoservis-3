@@ -35,6 +35,7 @@ html {
   width: 1.1em;
   height: 1.1em;
   vertical-align: middle;
+  transition: transform 0.2s ease;
 }
 .icon--phone {
   -webkit-mask: url("/images/icons/phone.svg");
@@ -79,5 +80,9 @@ html {
   }
   .heading--h1 {
     font-size: 4rem;
+  }
+
+  a:has(.icon):hover .icon {
+    transform: scale(1.05) rotate(-5deg);
   }
 }
