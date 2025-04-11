@@ -12,6 +12,10 @@
   :root {
     --primary: #1557ff;
     --dark: #1f2023;
+
+    --mobile-padding: 1rem;
+    --desktop-padding: 2rem;
+    --max-width: 1600px;
   }
 
   /* reset default styles */
@@ -34,8 +38,12 @@
 }
 
 @layer design {
-  .page {
-    padding: 0 1rem;
+  .page__header {
+    padding: 0 var(--mobile-padding, 1rem);
+    background-image: url(/images/hero/header-image.webp), url(/images/hero/header-image.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 850px;
   }
 
   /* navbar */
@@ -75,6 +83,9 @@
   }
 
   /* intro */
+  .page__intro {
+    margin-top: 4rem;
+  }
   .page__intro-heading {
     max-width: 11em;
   }
@@ -90,8 +101,13 @@
 
   /* tablet */
   @media (min-width: 824px) {
-    .page {
-      padding: 0 2rem;
+    .page__header {
+      padding: 0 var(--desktop-padding, 2rem);
+    }
+    .page__navbar,
+    .page__intro {
+      max-width: var(--max-width, 1600px);
+      margin-inline: auto;
     }
 
     /* navbar */
@@ -100,6 +116,7 @@
       flex-direction: row;
       gap: 2rem;
       transform: translateY(0);
+      background-color: transparent;
     }
     .page__navbar-item {
       font-size: 1.2rem;
