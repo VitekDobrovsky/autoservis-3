@@ -122,5 +122,9 @@
       font-size: 1.2rem;
       font-weight: 400;
     }
+
+    .page__navbar-item:hover {
+      text-decoration: underline;
+    }
   }
 }
