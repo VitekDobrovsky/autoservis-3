@@ -11,11 +11,16 @@
   /* root variables */
   :root {
     --primary: #1557ff;
+    --primary-light: #8ea8ff;
     --dark: #1f2023;
 
     --mobile-padding: 1rem;
     --desktop-padding: 2rem;
     --max-width: 1600px;
+  }
+
+  ::selection {
+    background-color: #86befe87;
   }
 
   /* reset default styles */
