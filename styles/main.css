@@ -1,10 +1,10 @@
 /* layers */
-@layer reset, init, design;
+@layer reset, init, design, components;
 
 /* imports */
 @import url(normalize.css) layer(reset);
 @import url(typography.css) layer(init);
-@import url(components.css) layer(design);
+@import url(components.css) layer(components);
 
 /* init styles */
 @layer init {
