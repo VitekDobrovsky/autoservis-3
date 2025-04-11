@@ -1,0 +1,73 @@
+/* utilis */
+.no-margin {
+  margin: 0;
+}
+
+/* button */
+.button {
+  background-color: var(--primary, #1557ff);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.5s ease, border 0.2s ease;
+  border: 1px solid transparent;
+  font-size: 1.25rem;
+  display: inline-block;
+}
+
+/* hamburger */
+.hamburger {
+  position: relative;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  width: 42px;
+  height: 28px;
+  cursor: pointer;
+}
+.hamburger__line {
+  display: block;
+  position: absolute;
+  height: 4.5px;
+  width: 42px;
+  background-color: var(--dark, #1f2023);
+  border-radius: 1px;
+  right: 0;
+  transition: transform 0.2s ease, top 0.2s ease, bottom 0.2s ease, width 0.2s ease;
+}
+.hamburger__line:nth-child(1) {
+  top: 0;
+}
+.hamburger__line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hamburger__line:nth-child(3) {
+  bottom: 0;
+}
+.hamburger.active .hamburger__line:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.hamburger.active .hamburger__line:nth-child(2) {
+  width: 0;
+}
+.hamburger.active .hamburger__line:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+@media (min-width: 824px) {
+  .hamburger {
+    display: none;
+  }
+
+  /* hover animations */
+  .button:hover {
+    background-color: white;
+    color: var(--primary, #1557ff);
+    border-color: var(--dark, #1f2023);
+  }
+}
