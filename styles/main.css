@@ -25,6 +25,9 @@
     text-decoration: none;
     color: inherit;
   }
+  p {
+    margin: 0.5em 0;
+  }
   address {
     font-style: normal;
   }
@@ -74,7 +77,9 @@
   /* intro */
   .page__intro-contact {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 0;
   }
   .page__intro .button {
     margin-top: 1rem;
