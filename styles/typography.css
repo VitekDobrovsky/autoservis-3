@@ -16,6 +16,7 @@ html {
 
 .heading {
   margin: 0.1em 0;
+  letter-spacing: 0.02em;
 }
 
 .heading--uppercase {
