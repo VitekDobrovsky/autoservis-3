@@ -77,7 +77,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 3rem;
+    /* gap: 3rem; */
     text-align: center;
     transition: transform 0.2s ease;
     transform: translateY(100%);
@@ -87,8 +87,15 @@
     transform: translateY(0);
   }
   .page__navbar-item {
+    --gap: 1.5rem;
     font-size: 1.5rem;
+    padding: var(--gap, 1.5rem) 1.5rem;
     font-weight: 500;
+    display: block;
+  }
+
+  .page__navbar-item.button {
+    margin-top: var(--gap, 1.5rem);
   }
 
   /* intro */
@@ -136,13 +143,19 @@
     .page__navbar-items {
       position: static;
       flex-direction: row;
-      gap: 2rem;
+      gap: 0rem;
       transform: translateY(0);
       background-color: transparent;
     }
     .page__navbar-item {
+      --gap: 1rem;
+      padding: 0.5rem var(--gap, 1rem);
       font-size: 1.2rem;
       font-weight: 400;
+    }
+
+    .page__navbar-item.button {
+      margin-top: 0;
     }
   }
 }
