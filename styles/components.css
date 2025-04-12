@@ -63,6 +63,7 @@
 /* rectangles - design element */
 .rectangle {
   display: block;
+  width: 300px;
 }
 .rectangle--left {
   margin-right: auto;
@@ -71,7 +72,7 @@
   margin-left: auto;
 }
 .rectangle--offset-top {
-  margin-top: -2rem;
+  margin-top: -2.5rem;
 }
 
 /* section */
