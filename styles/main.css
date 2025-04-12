@@ -48,7 +48,8 @@
 @layer design {
   .page__header {
     padding: 0 var(--mobile-padding, 1rem);
-    background-image: url(/images/hero/header-image.webp), url(/images/hero/header-image.jpg);
+    /* background-image: url(/images/hero/header-image.webp), url(/images/hero/header-image.jpg); */
+    background-color: aliceblue;
     background-size: cover;
     background-position: left;
     height: 780px;
