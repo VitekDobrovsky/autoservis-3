@@ -95,6 +95,18 @@
   transform: translateX(-10000px);
 }
 
+/* service card  */
+.service-card {
+  padding: 1rem;
+  border: 2px solid var(--dark, #1f2023);
+  border-radius: 0.5rem;
+}
+
+.service-card__description {
+  line-height: 1.2;
+  font-weight: 300;
+}
+
 @media (min-width: 824px) {
   .mobile-only {
     position: absolute;
