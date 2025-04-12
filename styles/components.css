@@ -92,7 +92,7 @@
 
 /* section */
 .section {
-  padding: 0 var(--mobile-padding, 1rem);
+  padding: var(--section-gap, 196px) var(--mobile-padding, 1rem);
 }
 
 @media (min-width: 824px) {
@@ -114,7 +114,7 @@
     border-color: var(--dark, #1f2023);
   }
   .section {
-    padding: 0 var(--desktop-padding, 2rem);
+    padding: var(--section-gap, 196px) var(--desktop-padding, 2rem);
     max-width: var(--max-width, 1400px);
     margin-inline: auto;
   }
