@@ -73,6 +73,18 @@
 .rectangle--offset-top {
   margin-top: -2rem;
 }
+.rectangle--right path {
+  transform: translateX(100%);
+}
+.rectangle--right path:nth-child(1) {
+  transition: transform 0.75s ease-out;
+}
+.rectangle--right path:nth-child(2) {
+  transition: transform 0.5s ease-out;
+}
+.rectangle--right.animate path {
+  transform: translateX(0%);
+}
 
 @media (min-width: 824px) {
   .hamburger {
