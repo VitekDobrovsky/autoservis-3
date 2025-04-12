@@ -60,6 +60,20 @@
   transform: translateY(50%) rotate(-45deg);
 }
 
+/* rectangles - design element */
+.rectangle {
+  display: block;
+}
+.rectangle--left {
+  margin-right: auto;
+}
+.rectangle--right {
+  margin-left: auto;
+}
+.rectangle--offset-top {
+  margin-top: -2rem;
+}
+
 @media (min-width: 824px) {
   .hamburger {
     display: none;
