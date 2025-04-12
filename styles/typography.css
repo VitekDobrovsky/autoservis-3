@@ -34,7 +34,7 @@ html {
 }
 
 .heading--h2 {
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -95,6 +95,9 @@ html {
   }
   .heading--h1 {
     font-size: 4rem;
+  }
+  .heading--h2 {
+    font-size: 2.7rem;
   }
 
   a:has(.icon):hover .icon {
