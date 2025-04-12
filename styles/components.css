@@ -115,7 +115,7 @@
   }
   .section {
     padding: 0 var(--desktop-padding, 2rem);
-    max-width: var(--max-width, 1600px);
+    max-width: var(--max-width, 1400px);
     margin-inline: auto;
   }
 }
