@@ -75,6 +75,15 @@
   margin-top: -2.5rem;
 }
 
+/* images */
+.image-responsive {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
 /* section */
 .section {
   padding: var(--section-gap, 196px) var(--mobile-padding, 1rem);
