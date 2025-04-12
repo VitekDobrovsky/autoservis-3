@@ -117,6 +117,7 @@
 
   .page__about-text {
     max-width: 45rem;
+    margin-top: 1.25rem;
   }
 
   /* tablet */
