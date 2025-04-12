@@ -20,6 +20,7 @@
     --max-width-hero: 1600px;
     --max-width: 1400px;
     --section-gap: 196px;
+    --heading-gap: 1.25rem;
   }
 
   ::selection {
@@ -124,11 +125,12 @@
 
   .page__about-text {
     max-width: 35rem;
-    margin-top: 1.25rem;
+    margin-top: var(--heading-gap, 1.25rem);
   }
 
   /* services */
   .page__services-wrapper {
+    margin-top: var(--heading-gap, 1.25rem);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1.5rem;

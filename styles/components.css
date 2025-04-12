@@ -123,11 +123,6 @@
   mask-size: contain;
 }
 
-/* 
-1. using css - pseudo elements
-- 
-*/
-
 .service-card__description {
   line-height: 1.2;
   font-weight: 300;
