@@ -5,6 +5,7 @@
 @import url(normalize.css) layer(reset);
 @import url(typography.css) layer(init);
 @import url(animations.css) layer(design);
+@import url(animations.css) layer(design);
 @import url(components.css) layer(components);
 
 /* init styles */
