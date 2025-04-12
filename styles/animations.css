@@ -1,3 +1,19 @@
+.rectangle path:nth-child(1) {
+  transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rectangle path:nth-child(2) {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rectangle--right path {
+  transform: translateX(100%);
+}
+.rectangle--left path {
+  transform: translateX(-100%);
+}
+.rectangle.animate path {
+  transform: translateX(0%);
+}
+
 @media (min-width: 824px) {
   a:has(.icon):hover .icon {
     transform: scale(1.05) rotate(-5deg);
