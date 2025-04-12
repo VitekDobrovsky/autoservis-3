@@ -104,6 +104,7 @@
   }
   .page__intro-heading {
     max-width: 11em;
+    margin-bottom: 5rem;
   }
   .page__intro-contact {
     display: flex;

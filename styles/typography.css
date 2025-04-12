@@ -28,6 +28,11 @@ html {
   color: var(--primary, #1557ff);
 }
 
+.heading--h1 {
+  font-size: 3.25rem;
+  font-weight: 900;
+}
+
 .heading--h2 {
   font-size: 2.7rem;
   font-weight: 700;
@@ -35,11 +40,6 @@ html {
 
 .heading--uppercase {
   text-transform: uppercase;
-}
-
-.heading--h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
 }
 
 /* ICONS */
