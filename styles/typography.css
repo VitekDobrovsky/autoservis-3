@@ -14,6 +14,10 @@ html {
   font-weight: 600;
 }
 
+.paragraph {
+  line-height: 1.5;
+}
+
 .heading {
   margin: 0.1em 0;
   letter-spacing: 0.02em;
