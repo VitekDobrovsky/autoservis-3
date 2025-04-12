@@ -79,17 +79,8 @@
   padding: var(--section-gap, 196px) var(--mobile-padding, 1rem);
 }
 
-/* hide / show on devices */
-.hide-on-mobile {
-  position: absolute;
-  transform: translateX(-10000000000000px);
-}
 
 @media (min-width: 824px) {
-  .hide-on-mobile {
-    position: static;
-    transform: translateX(0%);
-  }
   .hamburger {
     display: none;
   }
