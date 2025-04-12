@@ -127,6 +127,13 @@
     margin-top: 1.25rem;
   }
 
+  /* services */
+  .page__services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+  }
+
   /* tablet */
   @media (min-width: 824px) {
     .page__header {
