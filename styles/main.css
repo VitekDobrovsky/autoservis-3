@@ -118,14 +118,13 @@
 
   /* about */
   .page__about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
   }
 
   .page__about-text {
-    max-width: 45rem;
+    max-width: 35rem;
     margin-top: 1.25rem;
   }
 
@@ -157,6 +156,11 @@
 
     .page__navbar-item.button {
       margin-top: 0;
+    }
+    .page__about {
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      gap: 5em;
     }
   }
 }
