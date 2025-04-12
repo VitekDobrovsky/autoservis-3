@@ -73,16 +73,20 @@
 .rectangle--offset-top {
   margin-top: -2rem;
 }
+/* animation */
+.rectangle path:nth-child(1) {
+  transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rectangle path:nth-child(2) {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .rectangle--right path {
   transform: translateX(100%);
 }
-.rectangle--right path:nth-child(1) {
-  transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+.rectangle--left path {
+  transform: translateX(-100%);
 }
-.rectangle--right path:nth-child(2) {
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.rectangle--right.animate path {
+.rectangle.animate path {
   transform: translateX(0%);
 }
 
