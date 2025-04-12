@@ -66,9 +66,11 @@
 }
 .rectangle--left {
   margin-right: auto;
+  transform: translateX(calc(-1 * var(--mobile-padding, 1rem)));
 }
 .rectangle--right {
   margin-left: auto;
+  transform: translateX(var(--mobile-padding, 1rem));
 }
 .rectangle--offset-top {
   margin-top: -2rem;
@@ -107,5 +109,11 @@
 
   .button--outline:hover {
     border-color: var(--dark, #1f2023);
+  }
+  .rectangle--right {
+    transform: translateX(var(--desktop-padding, 2rem));
+  }
+  .rectangle--left {
+    transform: translateX(calc(-1 * var(--desktop-padding, 2rem)));
   }
 }
