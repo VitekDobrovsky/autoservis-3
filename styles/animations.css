@@ -1,0 +1,13 @@
+@media (min-width: 824px) {
+  a:has(.icon):hover .icon {
+    transform: scale(1.05) rotate(-5deg);
+  }
+  .button:hover {
+    background-color: white;
+    color: var(--primary, #1557ff);
+  }
+
+  .button--outline:hover {
+    border-color: var(--dark, #1f2023);
+  }
+}

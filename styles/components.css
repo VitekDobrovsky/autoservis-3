@@ -105,14 +105,6 @@
     font-size: 1rem;
   }
 
-  .button:hover {
-    background-color: white;
-    color: var(--primary, #1557ff);
-  }
-
-  .button--outline:hover {
-    border-color: var(--dark, #1f2023);
-  }
   .section {
     padding: var(--section-gap, 196px) var(--desktop-padding, 2rem);
     max-width: var(--max-width, 1400px);
