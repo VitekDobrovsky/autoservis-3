@@ -1,12 +1,11 @@
 /* layers */
-@layer reset, init, design, components;
+@layer reset, init, design, components, animations;
 
 /* imports */
 @import url(normalize.css) layer(reset);
 @import url(typography.css) layer(init);
-@import url(animations.css) layer(design);
-@import url(animations.css) layer(design);
 @import url(components.css) layer(components);
+@import url(animations.css) layer(animations);
 
 /* init styles */
 @layer init {

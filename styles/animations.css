@@ -23,6 +23,10 @@
     color: var(--primary, #1557ff);
   }
 
+  .page__navbar-item:not(.button):hover {
+    text-decoration: underline;
+  }
+
   .button--outline:hover {
     border-color: var(--dark, #1f2023);
   }
