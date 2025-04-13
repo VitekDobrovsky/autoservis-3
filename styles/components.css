@@ -202,6 +202,16 @@
   mask-size: contain;
 }
 
+/* testimonials */
+.testimonials__container {
+  display: flex;
+}
+
+.testimonials__item--hidden {
+  position: absolute;
+  transform: translateX(-10000px);
+}
+
 @media (min-width: 824px) {
   .mobile-only {
     position: absolute;
