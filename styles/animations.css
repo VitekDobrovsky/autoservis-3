@@ -30,4 +30,29 @@
   .button--outline:hover {
     border-color: var(--dark, #1f2023);
   }
+
+  /* service-card */
+  .service-card__title,
+  .service-card__description {
+    transition: transform 0.2s ease;
+  }
+  .service-card::after {
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover {
+    /* transform: translateY(-0.5rem); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-card:hover .service-card__title {
+    transform: translate(0.4rem, 0.2rem);
+  }
+
+  .service-card:hover .service-card__description {
+    transform: translate(0.4rem, 0.1rem);
+  }
+  .service-card:hover::after {
+    transform: translate(-0.3rem, -0.2rem);
+  }
 }
