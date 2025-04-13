@@ -132,7 +132,7 @@
   .page__services-wrapper {
     margin-top: var(--heading-gap, 1.25rem);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
   }
 
@@ -175,6 +175,10 @@
       align-items: center;
       grid-template-columns: 1fr 1fr;
       gap: 5em;
+    }
+    /* services */
+    .page__services-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
   }
 }
