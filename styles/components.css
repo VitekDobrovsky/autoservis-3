@@ -102,17 +102,25 @@
   border-radius: 0.25rem;
 }
 
+.service-card__description {
+  line-height: 1.2;
+  font-weight: 300;
+}
+
 .service-card::after {
   content: "";
   display: block;
   color: transparent;
   margin-left: auto;
   margin-top: 1rem;
-  background-color: var(--primary, #1557ff);
   width: 68px;
   height: 68px;
-  -webkit-mask: url("/images/icons/envelope.svg");
-  mask: url("/images/icons/envelope.svg");
+}
+
+.service-card--icon-tire::after {
+  background-color: var(--primary, #1557ff);
+  -webkit-mask: url(/images/icons/tire.svg);
+  mask: url(/images/icons/tire.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 
@@ -123,9 +131,74 @@
   mask-size: contain;
 }
 
-.service-card__description {
-  line-height: 1.2;
-  font-weight: 300;
+.service-card--icon-wrench::after {
+  background-color: var(--primary, #1557ff);
+  -webkit-mask: url(/images/icons/wrench.svg);
+  mask: url(/images/icons/wrench.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.service-card--icon-diagnostic::after {
+  background-color: var(--primary, #1557ff);
+  -webkit-mask: url(/images/icons/diagnostic.svg);
+  mask: url(/images/icons/diagnostic.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.service-card--icon-tire-diagnostic::after {
+  background-color: var(--primary, #1557ff);
+  -webkit-mask: url(/images/icons/tire-diagnostic.svg);
+  mask: url(/images/icons/tire-diagnostic.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.service-card--icon-toolbox::after {
+  background-color: var(--primary, #1557ff);
+  -webkit-mask: url(/images/icons/toolbox.svg);
+  mask: url(/images/icons/toolbox.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.service-card--icon-car::after {
+  background-color: var(--primary, #1557ff);
+  -webkit-mask: url(/images/icons/car.svg);
+  mask: url(/images/icons/car.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
 @media (min-width: 824px) {
