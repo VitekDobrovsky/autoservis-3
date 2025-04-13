@@ -98,8 +98,8 @@
 /* service card  */
 .service-card {
   padding: 1rem;
-  border: 2px solid var(--dark, #1f2023);
-  border-radius: 0.5rem;
+  border: 1px solid var(--dark, #1f2023);
+  border-radius: 0.25rem;
 }
 
 .service-card::after {
