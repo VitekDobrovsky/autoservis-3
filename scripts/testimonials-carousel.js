@@ -1,6 +1,4 @@
-const testimonials = document.querySelectorAll(".testimonials__item");
-const prevButton = document.querySelector(".testimonials__prev");
-const nextButton = document.querySelector(".testimonials__next");
+const testimonials = document.querySelectorAll(".testimonial");
 
 let range = [0, 1, 2];
 const totalTestimonials = testimonials.length;
@@ -8,12 +6,12 @@ const totalTestimonials = testimonials.length;
 function showTestimonial(indexRange) {
   testimonials.forEach((testimonial, i) => {
     if (indexRange.includes(i)) {
-      testimonial.classList.remove("testimonials__item--hidden");
+      testimonial.classList.remove("testimonial--hidden");
       if (i === indexRange[1]) {
-        testimonial.classList.add("testimonials__item--main");
+        testimonial.classList.add("testimonial--main");
       }
     } else {
-      testimonial.classList.add("testimonials__item--hidden");
+      testimonial.classList.add("testimonial--hidden");
     }
 
     testimonial.style.order = range.indexOf(i);

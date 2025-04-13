@@ -203,11 +203,7 @@
 }
 
 /* testimonials */
-.testimonials__container {
-  display: flex;
-}
-
-.testimonials__item--hidden {
+.testimonial--hidden {
   position: absolute;
   transform: translateX(-10000px);
 }
