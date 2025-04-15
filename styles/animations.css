@@ -23,6 +23,11 @@
     color: var(--primary, #1557ff);
   }
 
+  .button--arrow:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+
   .page__navbar-item:not(.button):hover {
     text-decoration: underline;
   }

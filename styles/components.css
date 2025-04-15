@@ -18,6 +18,12 @@
   display: inline-block;
 }
 
+.button--arrow {
+  border-radius: 1000px;
+  background-color: transparent;
+  color: var(--primary, #1557ff);
+}
+
 /* hamburger */
 .hamburger {
   position: relative;
