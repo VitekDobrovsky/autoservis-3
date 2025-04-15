@@ -140,13 +140,19 @@
   .page__testimonials-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page__testimonials-container {
-    display: flex;
-    justify-content: center;
+    margin-top: var(--heading-gap, 1.25rem);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 0 2rem;
     gap: 1rem;
+  }
+
+  .page__testimonials-button {
+    height: min-content;
   }
 
   /* tablet */

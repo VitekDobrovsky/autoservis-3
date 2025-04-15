@@ -213,12 +213,29 @@
   text-align: center;
   border: 1px solid var(--primary, #1557ff);
   border-radius: 0.25rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial::before {
+  content: " \2605 \2605 \2605 \2605 \2605 ";
+  display: block;
+  color: var(--primary, #1557ff);
+  font-size: 1.5rem;
+}
+.testimonial__text {
+  line-height: 1.5;
+  font-weight: 450;
+  margin-top: 0.75rem;
+}
+.testimonial__author {
+  margin-top: 1.25rem;
+}
+.testimonial--secondary {
   opacity: 0.8;
   transform: scale(0.8);
-}
-.testimonial--main {
-  transform: scale(1);
-  opacity: 1;
 }
 .testimonial--hidden {
   position: absolute;

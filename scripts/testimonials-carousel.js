@@ -7,8 +7,10 @@ function showTestimonial(indexRange) {
   testimonials.forEach((testimonial, i) => {
     if (indexRange.includes(i)) {
       testimonial.classList.remove("testimonial--hidden");
-      if (i === indexRange[1]) {
-        testimonial.classList.add("testimonial--main");
+      if (i !== indexRange[1]) {
+        testimonial.classList.add("testimonial--secondary");
+      } else {
+        testimonial.classList.remove("testimonial--secondary");
       }
     } else {
       testimonial.classList.add("testimonial--hidden");
