@@ -1,5 +1,5 @@
 /* layers */
-@layer reset, init, design, components, animations;
+@layer reset, init, components, design, animations;
 
 /* imports */
 @import url(normalize.css) layer(reset);
@@ -146,9 +146,7 @@
   .page__testimonials-container {
     margin-top: var(--heading-gap, 1.25rem);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 2rem;
-    gap: 1rem;
+    padding: 0 0rem;
   }
 
   .page__testimonials-button {
@@ -198,6 +196,14 @@
     /* services */
     .page__services-wrapper {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    /* testimonials */
+
+    .page__testimonials-container {
+      padding: 0 2rem;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
