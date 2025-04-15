@@ -186,6 +186,21 @@
     gap: 3rem;
   }
 
+  /* footer */
+  .page__footer {
+    position: relative;
+  }
+
+  .page__footer-copyright {
+    color: rgb(215, 214, 214);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    width: max-content;
+    font-size: 14px;
+  }
+
   /* tablet */
   @media (min-width: 824px) {
     .page__header {
