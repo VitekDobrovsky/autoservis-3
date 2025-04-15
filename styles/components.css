@@ -209,6 +209,17 @@
 }
 
 /* testimonials */
+.testimonial {
+  text-align: center;
+  border: 1px solid var(--primary, #1557ff);
+  border-radius: 0.25rem;
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+.testimonial--main {
+  transform: scale(1);
+  opacity: 1;
+}
 .testimonial--hidden {
   position: absolute;
   transform: translateX(-10000px);
