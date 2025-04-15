@@ -158,15 +158,19 @@
   .page__contact-wrapper {
     display: flex;
     gap: 2rem;
+    flex-direction: column;
   }
 
   .page__contact-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     font-size: 1.1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
-
+  .page__contact-opening-hours {
+    width: max-content;
+  }
   .page__contact-info a {
     display: block;
     width: max-content;
@@ -179,6 +183,7 @@
   .page__contact-opening-hours-day {
     display: flex;
     justify-content: space-between;
+    gap: 3rem;
   }
 
   /* tablet */
@@ -227,11 +232,23 @@
     }
 
     /* testimonials */
-
     .page__testimonials-container {
       padding: 0 2rem;
       gap: 1rem;
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* contact */
+    .page__contact-wrapper {
+      flex-direction: row;
+    }
+    .page__contact-container {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .page__contact-opening-hours {
+      order: 2;
     }
   }
 }
