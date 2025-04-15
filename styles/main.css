@@ -136,6 +136,18 @@
     gap: 1.5rem;
   }
 
+  /* testimonials */
+  .page__testimonials-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page__testimonials-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
   /* tablet */
   @media (min-width: 824px) {
     .page__header {
