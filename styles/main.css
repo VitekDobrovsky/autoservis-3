@@ -154,6 +154,7 @@
 
   .page__testimonials-button {
     height: min-content;
+    font-size: 1.1rem;
   }
 
   /* tablet */
