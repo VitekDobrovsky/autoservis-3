@@ -154,6 +154,33 @@
     font-size: 1.1rem;
   }
 
+  /* contact */
+  .page__contact-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .page__contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+
+  .page__contact-info a {
+    display: block;
+    width: max-content;
+  }
+  .page__contact-item,
+  .page__contact-opening-hours-day {
+    margin-bottom: 0.75rem;
+  }
+
+  .page__contact-opening-hours-day {
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* tablet */
   @media (min-width: 824px) {
     .page__header {

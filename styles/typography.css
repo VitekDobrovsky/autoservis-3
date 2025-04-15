@@ -58,6 +58,9 @@ html {
   vertical-align: middle;
   transition: transform 0.2s ease;
 }
+.icon--dark {
+  background-color: var(--dark, #1f2023);
+}
 .icon--phone {
   -webkit-mask: url("/images/icons/phone.svg");
   mask: url("/images/icons/phone.svg");
