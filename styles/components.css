@@ -71,6 +71,11 @@
   display: block;
   width: 300px;
 }
+.rectangle--long {
+  width: 100%;
+  margin-bottom: 0;
+  height: 160px;
+}
 .rectangle--left {
   margin-right: auto;
 }
