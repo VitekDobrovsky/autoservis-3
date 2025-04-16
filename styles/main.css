@@ -49,7 +49,7 @@
 @layer design {
   .page__header {
     padding: 0 var(--mobile-padding, 1rem);
-    background-image: url(/images/hero/header-image.webp), url(/images/hero/header-image.jpg);
+    background-image: image-set(url(/images/hero/header-image.webp) type("image/webp"), url(/images/hero/header-image.png) type("image/png"));
     background-color: aliceblue;
     background-size: cover;
     background-position: top left;

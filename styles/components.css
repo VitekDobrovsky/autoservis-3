@@ -112,6 +112,9 @@
   border: 1px solid var(--dark, #1f2023);
   border-radius: 0.25rem;
   transition: padding 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .service-card__description {
