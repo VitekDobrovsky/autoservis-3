@@ -3,6 +3,7 @@
 
 /* imports */
 @import url(normalize.css) layer(reset);
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap") layer(reset);
 @import url(typography.css) layer(init);
 @import url(components.css) layer(components);
 @import url(animations.css) layer(animations);
@@ -25,6 +26,10 @@
 
   ::selection {
     background-color: #86befe87;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   /* reset default styles */
@@ -189,6 +194,7 @@
   /* footer */
   .page__footer {
     position: relative;
+    overflow: hidden;
   }
 
   .page__footer-copyright {
