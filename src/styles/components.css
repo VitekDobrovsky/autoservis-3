@@ -238,6 +238,12 @@
   font-weight: 450;
   margin-top: 0.75rem;
 }
+
+.testimonial__text::after,
+.testimonial__text::before {
+  content: "„";
+  display: inline;
+}
 .testimonial__author {
   margin-top: 1.25rem;
 }
