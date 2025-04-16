@@ -173,6 +173,9 @@
     flex-wrap: wrap;
     gap: 2rem;
   }
+  .page__contact-map {
+    border-radius: 0.25rem;
+  }
   .page__contact-opening-hours {
     width: max-content;
   }
