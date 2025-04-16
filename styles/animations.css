@@ -14,6 +14,16 @@
   transform: translateX(0%);
 }
 
+.page__footer-copyright {
+  left: 120%;
+  transition: left 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page__footer:has(.rectangle.animate) .page__footer-copyright {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: 824px) {
   a:has(.icon):hover .icon {
     transform: scale(1.05) rotate(-5deg);
