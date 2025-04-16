@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoservis Koložáry</title>
 
-    <script src="/src/scripts/hamburger.js" defer></script>
-    <script src="/src/scripts/animation-observer.js" defer></script>
-    <script src="/src/scripts/testimonials-carousel.js" defer></script>
+  <script type="module" crossorigin src="/autoservis-3/assets/index-CwAmjKnI.js"></script>
   <link rel="stylesheet" crossorigin href="/autoservis-3/assets/index-CMCeuPM1.css">
 </head>
 
@@ -17,12 +15,11 @@
         <nav class="page__navbar">
             <h1 class="page__navbar-logo logotype no-margin">Autoservis Koložáry</h1>
 
-            <button class="hamburger" onclick="toggleHamburger()">
+            <button class="hamburger">
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
             </button>
-
             <menu class="page__navbar-items">
                 <li><a class="page__navbar-item" href="/">Úvod</a></li>
                 <li><a class="page__navbar-item" href="#about">O Nás</a></li>
@@ -136,8 +133,7 @@
             <h2 class="heading heading--h2"><span class="heading heading--foretext">Dbáme na </span>názory našich
                 zákazníků</h2>
             <div class="page__testimonials-wrapper">
-                <button class="button button--arrow page__testimonials-button"
-                    onclick="moveTestimonialsBack()">←</button>
+                <button class="button button--arrow page__testimonials-button testimonials__button--left">←</button>
                 <div class="page__testimonials-container">
                     <div class="testimonial">
                         <p class="testimonial__text">Lorem Ipsum is simply dummy text of the printing and
@@ -164,8 +160,7 @@
                         <p class="testimonial__author">Alena Prosečanská</p>
                     </div>
                 </div>
-                <button class="button button--arrow page__testimonials-button"
-                    onclick="moveTestimonialsForward()">→</button>
+                <button class="button button--arrow page__testimonials-button testimonials__button--right">→</button>
             </div>
         </section>
         <svg class="rectangle rectangle--left" width="372" height="158" viewBox="0 0 372 158" fill="none"
