@@ -54,3 +54,8 @@ function moveTestimonialsForward() {
 document.addEventListener("DOMContentLoaded", () => {
   showTestimonial(range);
 });
+
+const buttonRight = document.querySelector(".testimonials__button--right");
+const buttonLeft = document.querySelector(".testimonials__button--left");
+buttonRight.addEventListener("click", moveTestimonialsForward);
+buttonLeft.addEventListener("click", moveTestimonialsBack);

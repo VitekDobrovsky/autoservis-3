@@ -5,3 +5,6 @@ function toggleHamburger() {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 }
+
+hamburger.addEventListener("click", toggleHamburger);
+navMenu.addEventListener("click", toggleHamburger);
