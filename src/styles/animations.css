@@ -43,7 +43,7 @@
     color: white;
   }
 
-  .page__navbar-item:not(.button):hover {
+  .link:hover {
     color: var(--primary, #1557ff);
   }
 
