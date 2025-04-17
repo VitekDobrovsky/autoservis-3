@@ -57,13 +57,23 @@
     background-color: aliceblue;
     background-size: cover;
     background-position: top left;
-    height: 750px;
+    height: 850px;
   }
 
   /* navbar */
   .page__header {
     padding: 1rem var(--mobile-padding, 1rem);
+    background-color: rgba(255, 255, 255, 0.952);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease, padding 0.2s ease;
   }
+
   .page__navbar {
     display: flex;
     justify-content: space-between;
@@ -110,7 +120,7 @@
 
   /* intro */
   .page__intro {
-    padding-top: 5rem;
+    padding-top: 9rem;
   }
   .page__intro-heading {
     max-width: 11em;
@@ -220,7 +230,7 @@
   /* tablet */
   @media (min-width: 824px) {
     .page__header {
-      padding: 1rem var(--desktop-padding, 2rem);
+      padding: 0.8rem var(--desktop-padding, 2rem);
     }
     .page__hero {
       padding: 0 var(--desktop-padding, 2rem);
