@@ -1,5 +1,5 @@
 /* layers */
-@layer reset, init, components, design, animations;
+@layer reset, init, design, components, animations;
 
 /* imports */
 @import url(normalize.css) layer(reset);
