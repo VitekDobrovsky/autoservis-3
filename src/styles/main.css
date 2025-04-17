@@ -51,21 +51,23 @@
 }
 
 @layer design {
-  .page__header {
+  .page__hero {
     padding: 0 var(--mobile-padding, 1rem);
     /* background-image: image-set(url(/images/hero/header-image.webp) type("image/webp"), url(/images/hero/header-image.png) type("image/png")); */
     background-color: aliceblue;
     background-size: cover;
     background-position: top left;
-    height: 780px;
+    height: 750px;
   }
 
   /* navbar */
+  .page__header {
+    padding: 1rem var(--mobile-padding, 1rem);
+  }
   .page__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
   }
   .page__navbar-logo {
     position: relative;
@@ -108,7 +110,7 @@
 
   /* intro */
   .page__intro {
-    margin-top: 5rem;
+    padding-top: 5rem;
   }
   .page__intro-heading {
     max-width: 11em;
@@ -218,6 +220,9 @@
   /* tablet */
   @media (min-width: 824px) {
     .page__header {
+      padding: 1rem var(--desktop-padding, 2rem);
+    }
+    .page__hero {
       padding: 0 var(--desktop-padding, 2rem);
     }
     .page__navbar,
