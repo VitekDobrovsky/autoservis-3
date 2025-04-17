@@ -44,7 +44,7 @@
   }
 
   .page__navbar-item:not(.button):hover {
-    text-decoration: underline;
+    color: var(--primary, #1557ff);
   }
 
   .button--outline:hover {
