@@ -273,7 +273,6 @@
     display: none;
   }
 
-
   .section {
     padding: var(--section-gap, 196px) var(--desktop-padding, 2rem);
     max-width: var(--max-width, 1400px);
@@ -288,5 +287,9 @@
   .testimonial--hidden {
     position: absolute;
     transform: translateX(-10000px);
+  }
+
+  .button--small-on-desktop {
+    font-size: 0.95rem;
   }
 }

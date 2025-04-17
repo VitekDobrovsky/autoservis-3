@@ -5,7 +5,7 @@ html {
 }
 
 .text-large {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .logotype {
@@ -115,5 +115,9 @@ html {
 
   a:has(.icon):hover .icon {
     transform: scale(1.05) rotate(-5deg);
+  }
+
+  .text-large {
+    font-size: 18px;
   }
 }
