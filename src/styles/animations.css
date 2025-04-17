@@ -33,6 +33,11 @@
     color: var(--primary, #1557ff);
   }
 
+  .button--ghost:hover {
+    background-color: var(--primary, #1557ff);
+    color: white;
+  }
+
   .button--arrow:hover {
     background-color: var(--primary);
     color: white;
