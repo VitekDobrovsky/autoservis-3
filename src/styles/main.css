@@ -51,15 +51,6 @@
 }
 
 @layer design {
-  .page__hero {
-    padding: 0 var(--mobile-padding, 1rem);
-    /* background-image: image-set(url(/images/hero/header-image.webp) type("image/webp"), url(/images/hero/header-image.png) type("image/png")); */
-    background-color: aliceblue;
-    background-size: cover;
-    background-position: top left;
-    height: 850px;
-  }
-
   /* navbar */
   .page__header {
     padding: 1rem var(--mobile-padding, 1rem);
@@ -85,6 +76,7 @@
   }
   .page__navbar-items {
     position: fixed;
+    height: 100vh;
     z-index: 2;
     top: 0;
     bottom: 0;
@@ -119,12 +111,38 @@
   }
 
   /* intro */
-  .page__intro {
-    padding-top: 9rem;
+  .page__hero {
+    padding: 0 var(--mobile-padding, 1rem);
+    min-height: 740px;
+    position: relative;
   }
+  .page__hero-wrapper {
+    display: flex;
+    padding-top: 5rem;
+    padding: 9rem 0;
+  }
+
+  .page__hero-image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50dvw;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1150px) {
+    /* .page__hero-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding-top: 8rem;
+    } */
+  }
+
   .page__intro-heading {
+    width: auto;
     max-width: 11em;
-    margin-bottom: 5rem;
   }
   .page__intro-text {
     max-width: 40em;
@@ -235,8 +253,14 @@
     .page__hero {
       padding: 0 var(--desktop-padding, 2rem);
     }
+    .page__hero-image {
+      display: block;
+    }
+    .page__intro-heading {
+      width: max-content;
+    }
     .page__navbar,
-    .page__intro {
+    .page__hero-wrapper {
       max-width: var(--max-width-hero, 1600px);
       margin-inline: auto;
     }
@@ -244,6 +268,7 @@
     /* navbar */
     .page__navbar-items {
       position: static;
+      height: auto;
       flex-direction: row;
       gap: 0rem;
       transform: translateY(0);
