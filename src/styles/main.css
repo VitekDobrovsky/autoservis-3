@@ -99,6 +99,10 @@
     display: block;
   }
 
+  .page__navbar-item:not(.button):last-child {
+    padding-right: calc(var(--gap, 1.5rem) * 2);
+  }
+
   .page__navbar-item.button {
     margin-top: var(--gap, 1.5rem);
   }
