@@ -176,6 +176,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .page__testimonials-container {
@@ -297,10 +299,16 @@
     }
 
     /* testimonials */
+    .page__testimonials-wrapper {
+      flex-direction: row;
+    }
     .page__testimonials-container {
-      padding: 0 2rem;
       gap: 1rem;
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .page__testimonials-button {
+      transform: rotate(-90deg);
     }
 
     /* contact */
