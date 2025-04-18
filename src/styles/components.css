@@ -117,7 +117,11 @@
 
 /* section */
 .section {
-  padding: var(--section-gap, 196px) var(--mobile-padding, 1rem);
+  padding: var(--section-gap, 124px) var(--mobile-padding, 1rem);
+}
+
+.section--small {
+  padding: calc(var(--section-gap, 124px) - 3rem) var(--mobile-padding, 1rem);
 }
 
 /* hide / show elements */
@@ -290,7 +294,8 @@
   }
 
   .section {
-    padding: var(--section-gap, 196px) var(--desktop-padding, 2rem);
+    padding-left: var(--desktop-padding, 2rem);
+    padding-right: var(--desktop-padding, 2rem);
     max-width: var(--max-width, 1400px);
     margin-inline: auto;
   }
