@@ -98,7 +98,12 @@
   margin-left: auto;
 }
 .rectangle--offset-top {
-  margin-top: -2.5rem;
+  /* transform: translateY(-3rem); */
+  margin-top: -3em;
+}
+.rectangle--offset-bottom {
+  /* transform: translateY(3rem); */
+  margin-bottom: -3em;
 }
 
 /* images */
