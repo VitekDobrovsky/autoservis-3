@@ -48,10 +48,16 @@
 .page__header {
   transition: box-shadow 0.3s ease, padding 0.3s ease;
 }
+.page__navbar {
+  transition: max-width 0.3s ease;
+}
 .page__header.active {
   padding-bottom: 0.9rem;
   padding-top: 0.9rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.page__navbar.active {
+  max-width: var(--max-width, 1200px);
 }
 
 .page__footer-copyright {
