@@ -20,7 +20,7 @@
     --max-width-hero: 1600px;
     --max-width: 1400px;
     --section-gap: 196px;
-    --heading-gap: 1.25rem;
+    --heading-gap: 1.5rem;
   }
 
   ::selection {
@@ -61,8 +61,12 @@
     left: 0;
     right: 0;
     z-index: 20;
+    transition: box-shadow 0.3s ease, padding 0.3s ease;
+  }
+  .page__header.active {
+    padding-bottom: 0.9rem;
+    padding-top: 0.9rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease, padding 0.2s ease;
   }
 
   .page__navbar {
@@ -119,8 +123,7 @@
   }
   .page__hero-wrapper {
     display: flex;
-    padding-top: 5rem;
-    padding: 9rem 0;
+    padding-top: 9rem;
   }
 
   .page__hero-image {
@@ -128,18 +131,8 @@
     position: absolute;
     bottom: 0;
     right: -200px;
-    width: 60dvw;
+    width: 65dvw;
     height: auto;
-
-  }
-
-  @media screen and (min-width: 1150px) {
-    /* .page__hero-image {
-      display: block;
-      width: 100%;
-      height: auto;
-      padding-top: 8rem;
-    } */
   }
 
   .page__intro-heading {
@@ -169,6 +162,7 @@
 
   .page__about-text {
     max-width: 35rem;
+    margin: 0;
   }
 
   /* services */
@@ -250,10 +244,11 @@
   /* tablet */
   @media (min-width: 824px) {
     .page__header {
-      padding: 0.8rem var(--desktop-padding, 2rem);
+      padding: 1.2rem var(--desktop-padding, 2rem);
     }
     .page__hero {
       padding: 0 var(--desktop-padding, 2rem);
+      overflow: hidden;
     }
     .page__hero-image {
       display: block;
