@@ -114,7 +114,8 @@
     min-height: 740px;
     position: relative;
     margin-bottom: 3rem;
-    background-image: url(/images/hero/background-center.png);
+    background-image: url(/images/hero/background-center.jpg);
+    background-image: image-set(url(/images/hero/background-center.webp) type("image/webp"), url(/images/hero/background-center.jpg) type("image/jpeg"));
     background-size: cover;
     background-position: center;
   }
@@ -264,7 +265,8 @@
     .page__hero {
       padding: 0 var(--desktop-padding, 2rem);
       overflow: hidden;
-      background-image: url(/images/hero/background-left.png);
+      background-image: url(/images/hero/background-left.jpg);
+      background-image: image-set(url(/images/hero/background-left.webp) type("image/webp"), url(/images/hero/background-left.jpg) type("image/jpeg"));
       background-position: top left;
     }
     .page__hero-image {
